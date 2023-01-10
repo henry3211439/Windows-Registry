@@ -1,0 +1,11 @@
+Windows Registry Editor Version 5.00
+
+; @Author        Terafony
+; @Change        2023/01/10
+; @Description   Disable first logon animation and policy experience.
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon]
+"EnableFirstLogonAnimation"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\OOBE]
+"DisablePrivacyExperience"=dword:00000001

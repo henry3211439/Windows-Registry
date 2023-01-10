@@ -1,0 +1,15 @@
+Windows Registry Editor Version 5.00
+
+; @Author        Terafony
+; @Change        2023/01/10
+; @Description   Microsfot edge settings for all users.
+
+; Set home page and enable home button
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Edge]
+"HomepageLocation"="https://www.google.com.tw"
+"ShowHomeButton"=dword:00000001
+
+; Allow popup on specific urls
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Edge\PopupsAllowedForUrls]
+"1"="example.com"
+"2"="[*.]example.com"
